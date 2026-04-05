@@ -78,7 +78,7 @@ function sendRSVP() {
         return; 
     }
     
-    const text = `Assalamu'alaikum Putri %26 Dwi,%0A%0ASaya *${name}* ingin mengonfirmasi bahwa saya *${status}* di acara pernikahan kalian.%0A%0AUcapan %26 Doa: ${message}`;
+    const text = `Assalamu'alaikum Putri & Dwi,\n\nSaya *${name}* ingin mengonfirmasi bahwa saya *${status}* di acara pernikahan kalian.\n\nUcapan & Doa: ${message}`;
     
     window.open(`https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(text)}`, '_blank');
 }
