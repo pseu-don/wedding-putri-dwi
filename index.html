@@ -444,8 +444,8 @@
             const message = document.getElementById('rsvp_message').value;
             const phone = "6281233551798"; 
             if (!name || !status) { alert("Mohon isi Nama dan Status Kehadiran."); return; }
-            const text = `Assalamu'alaikum Putri & Dwi, saya *${name}* mengonfirmasi bahwa saya *${status}* di pernikahan kalian.%0A%0AUcapan: ${message}`;
-            window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+            const text = `Assalamu'alaikum Putri %26 Dwi, saya *${name}* mengonfirmasi bahwa saya *${status}* di pernikahan kalian.%0A%0AUcapan &26 Doa: ${message}`;
+            window.open(`https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(text)}`, '_blank');
         }
 
         function copyRek() {
